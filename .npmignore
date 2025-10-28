@@ -1,0 +1,33 @@
+# Development files
+src/
+test/
+examples/
+.github/
+
+# Config files
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+.cursor/
+
+# Documentation (except README)
+CONTRIBUTING.md
+plan.md
+rules.md
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build artifacts
+*.log
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
