@@ -3,7 +3,7 @@
   "author": "Srinath Shrestha <me@srinathshrestha.xyz>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/srinathshrestha/smart-env.git"
+    "url": "git+https://github.com/srinathshrestha/smart-env.git"
   },
   "homepage": "https://github.com/srinathshrestha/smart-env",
   "version": "0.1.3",
