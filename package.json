@@ -44,7 +44,6 @@
     "config"
   ],
   "license": "MIT",
-  "type": "commonjs",
   "devDependencies": {
     "@types/node": "^24.9.1",
     "tsup": "^8.5.0",
