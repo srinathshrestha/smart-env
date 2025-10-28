@@ -139,7 +139,7 @@ const env = loadEnv(schema);
 
 ## Contributing
 
-Contributions welcome! Please follow the code rules in `.cursor/rules/code-rules.mdc`.
+Contributions welcome!
 
 ## License
 

@@ -31,14 +31,9 @@ npm run build
 
 ## Code Style
 
-This project follows strict code style rules defined in `.cursor/rules/code-rules.mdc`:
-
-- Use **camelCase** for all identifiers
-- Keep files under **90 lines** (split into modules if needed)
 - Prefer **functional programming** patterns
 - Maximum **2 levels of nesting**
-- Write clear, self-explanatory names
-- Add explanatory comments
+
 
 ## Testing
 
@@ -71,4 +66,3 @@ Use clear, descriptive commit messages:
 
 Open an issue for discussion before starting major changes.
 
-Thank you for contributing!

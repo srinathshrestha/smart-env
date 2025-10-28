@@ -1,5 +1,11 @@
 {
   "name": "smart-env",
+  "author": "Srinath Shrestha",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srinathshrestha/smart-env.git"
+  },
+  "homepage": "https://github.com/srinathshrestha/smart-env",
   "version": "0.1.0",
   "description": "Secure .env loader with schema validation, type safety, defaults, and helpful error reporting",
   "main": "dist/index.cjs",
