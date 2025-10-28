@@ -1,0 +1,60 @@
+{
+  "name": "smart-env",
+  "version": "0.1.0",
+  "description": "Secure .env loader with schema validation, type safety, defaults, and helpful error reporting",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "keywords": [
+    "environment",
+    "variables",
+    "loader",
+    "node.js",
+    "dotenv",
+    "zod",
+    "validation",
+    "type-safe",
+    "env",
+    "config"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.4"
+  },
+  "peerDependencies": {
+    "zod": "^3.0.0 || ^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "zod": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
