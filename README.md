@@ -22,11 +22,11 @@ Traditional `.env` loaders like `dotenv` only load environment variables into `p
 ## Installation
 
 ```bash
-npm install smart-env zod
+npm install @srinath-shrestha/smart-env zod
 # or
-pnpm add smart-env zod
+pnpm add @srinath-shrestha/smart-env zod
 # or
-yarn add smart-env zod
+yarn add @srinath-shrestha/smart-env zod
 ```
 
 > **Note**: `zod` is a peer dependency. If you prefer not to use Zod, you can use the built-in DSL (see below).
@@ -36,7 +36,7 @@ yarn add smart-env zod
 ### Using Zod (Recommended)
 
 ```typescript
-import { loadEnv } from "smart-env";
+import { loadEnv } from "@srinath-shrestha/smart-env";
 import { z } from "zod";
 
 const schema = z.object({
@@ -56,7 +56,7 @@ const env = loadEnv(schema, { strict: true, scrubProcessEnv: true });
 ### Using Built-in DSL (No Zod)
 
 ```typescript
-import { defineSchema, loadEnv } from "smart-env";
+import { defineSchema, loadEnv } from "@srinath-shrestha/smart-env";
 
 const schema = defineSchema({
   PORT: { type: "number", default: 3000 },
@@ -124,7 +124,7 @@ const apiKey = process.env.API_KEY; // might be undefined
 **After:**
 
 ```typescript
-import { loadEnv } from "smart-env";
+import { loadEnv } from "@srinath-shrestha/smart-env";
 import { z } from "zod";
 
 const schema = z.object({

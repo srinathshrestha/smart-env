@@ -1,7 +1,7 @@
 // Basic example using internal DSL.
 // Run with: ts-node examples/basic.ts
 
-import { loadEnv, defineSchema } from "../src/index";
+import { loadEnv, defineSchema } from "@srinath-shrestha/smart-env";
 
 // Define schema using built-in DSL.
 const schema = defineSchema({
