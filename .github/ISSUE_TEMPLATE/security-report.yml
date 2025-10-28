@@ -1,0 +1,97 @@
+name: Security Vulnerability Report
+description: Report a security vulnerability in smart-env
+title: "[SECURITY] "
+labels: ["security", "bug", "high-priority"]
+assignees: ["srinathshrestha"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **⚠️ IMPORTANT: This is a security vulnerability report.**
+
+        Please do not include sensitive information in this issue. If you need to share sensitive details, please email [me@srinathshrestha.xyz](mailto:me@srinathshrestha.xyz) instead.
+
+  - type: textarea
+    id: vulnerability-description
+    attributes:
+      label: Vulnerability Description
+      description: Provide a clear and concise description of the security vulnerability.
+      placeholder: Describe the security issue you've discovered...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide detailed steps to reproduce the vulnerability.
+      placeholder: |
+        1. Set up environment with...
+        2. Configure smart-env with...
+        3. Observe the security issue...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+      placeholder: Describe what the secure behavior should be...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happens?
+      placeholder: Describe the actual insecure behavior...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: How severe is this vulnerability?
+      options:
+        - Low - Minor security concern
+        - Medium - Moderate security risk
+        - High - Significant security risk
+        - Critical - Severe security risk
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Potential Impact
+      description: What could an attacker do with this vulnerability?
+      placeholder: Describe the potential security impact...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested Fix
+      description: Do you have any suggestions for how to fix this issue?
+      placeholder: If you have ideas for fixing this, please share them...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other relevant information about the vulnerability.
+      placeholder: Add any other context about the problem here...
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct.
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

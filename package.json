@@ -1,11 +1,23 @@
 {
   "name": "@srinath-shrestha/smart-env",
-  "author": "Srinath Shrestha <me@srinathshrestha.xyz>",
+  "author": {
+    "name": "Srinath Shrestha",
+    "email": "me@srinathshrestha.xyz",
+    "url": "https://srinathshrestha.xyz"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/srinathshrestha/smart-env.git"
+    "url": "git+https://github.com/srinathshrestha/smart-env.git",
+    "directory": "smart-env"
   },
-  "homepage": "https://github.com/srinathshrestha/smart-env",
+  "homepage": "https://github.com/srinathshrestha/smart-env#readme",
+  "bugs": {
+    "url": "https://github.com/srinathshrestha/smart-env/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/srinathshrestha"
+  },
   "version": "0.1.6",
   "description": "Secure .env loader with schema validation, type safety, defaults, and helpful error reporting",
   "main": "dist/index.cjs",
@@ -14,9 +26,14 @@
   "scripts": {
     "test": "vitest",
     "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
     "build": "tsup",
     "dev": "tsup --watch",
-    "prepublishOnly": "npm run build && npm test"
+    "lint": "echo 'No linting configured'",
+    "format": "echo 'No formatting configured'",
+    "prepublishOnly": "npm run build && npm test",
+    "prepack": "npm run build",
+    "postpack": "rm -rf dist"
   },
   "exports": {
     ".": {
@@ -41,7 +58,12 @@
     "validation",
     "type-safe",
     "env",
-    "config"
+    "config",
+    "typescript",
+    "schema",
+    "secure",
+    "immutable",
+    "runtime-validation"
   ],
   "license": "MIT",
   "devDependencies": {
