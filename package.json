@@ -6,7 +6,7 @@
     "url": "https://github.com/srinathshrestha/smart-env.git"
   },
   "homepage": "https://github.com/srinathshrestha/smart-env",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Secure .env loader with schema validation, type safety, defaults, and helpful error reporting",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
