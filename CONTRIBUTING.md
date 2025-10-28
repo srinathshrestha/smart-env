@@ -42,16 +42,6 @@ npm run build
 - Aim for high test coverage
 - Test files go in `test/unit/` or `test/integration/`
 
-## Pull Request Process
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Make your changes following code style rules
-4. Add tests for new functionality
-5. Ensure all tests pass: `npm test`
-6. Build successfully: `npm run build`
-7. Commit with clear, descriptive messages
-8. Push to your fork and submit a pull request
 
 ## Commit Messages
 
