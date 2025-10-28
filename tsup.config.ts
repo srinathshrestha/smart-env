@@ -9,4 +9,9 @@ export default defineConfig({
   target: "es2021",
   minify: false,
   external: ["zod", "dotenv"],
+  outExtension({ format }) {
+    return {
+      js: format === "cjs" ? ".cjs" : ".mjs",
+    };
+  },
 });
